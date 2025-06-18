@@ -7,6 +7,7 @@ let accountMoney = document.getElementById("account_money").innerText
 const returnAccountMoney = moneyConverter(accountMoney);
 
 const aidQuota = moneyConverter(document.getElementById("aid_quota").innerText);
+const floodNoakhali = moneyConverter(document.getElementById("flood_noakhali").innerText);
 
 
 document.getElementById("quota_donate_btn").addEventListener('click', function () {
@@ -41,3 +42,11 @@ document.getElementById("quota_donate_btn").addEventListener('click', function (
     }
 
 })
+
+// noakhali vivag Chai
+
+document.getElementById("noakhali_btn").addEventListener('click',function(){
+    const donated_noakhali = document.getElementById("noakhali_account").value
+    console.log(donated_noakhali);
+})
+
