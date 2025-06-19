@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/daisyui.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <title>Donate Bangladesh</title>
+</head>
+
+<body class="font-[Lexend]">
+    <header class="shadow-sm sticky top-0  z-50">
+        <div class="bg-[#F9F7F3] ">
+            <div class="navbar  py-6 w-10/12 mx-auto  flex flex-col lg:flex-row  ">
+                <div class="navbar-start">
+                    <button onclick="window.location.href='index.html'"
+                        class="btn btn-primary text-black text-xl px-8 py-3 font-semibold bg-[#B4F461] border-none hover:bg-green-300 mb-4 lg:mb-0">Home</button>
+                </div>
+                <div class="navbar-center">
+                    <div class="flex items-center gap-4 ">
+                        <img src="./assets/logo.png" alt="">
+                        <h3 class="font-semibold text-xl">Donate Bangladesh</h3>
+                    </div>
+                </div>
+                <div class="navbar-end gap-3 rounded">
+                    <img src="./assets/coin.png" alt="">
+                    <h6 id="account_money" class=" text-xl font-medium text-gray-500">6500</h6>
+                    <h6 class="text-xl font-medium text-gray-500">BDT</h6>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+    <main class="w-10/12 mx-auto pb-10">
+            <div class="flex items-center text-6xl font-bold gap-5 py-6 ">
+                <h1>Important FAQ</h1>
+                <img class="h-20 w-20" src="./assets/help.png" alt="">
+            </div>
+            <div class="rounded-xl border p-5 border-gray-400 mb-4">
+                <div class="ml-5">
+                    <h3 class="text-2xl font-bold mb-3">What is the Document Object Model (DOM)?</h3>
+                <p class="text-sm w-11/12">The Document Object Model (DOM) is a programming interface for web documents that represents the
+                    structure of a webpage as a tree of objects, allowing programs and scripts (like JavaScript) to
+                    dynamically access, modify, and update the content, structure, and style of a document. Each
+                    element, attribute, and piece of text in an HTML or XML document becomes a node in this tree,
+                    enabling developers to interact with the page using scripting languages by adding, deleting, or
+                    changing elements and their properties in real time.</p>
+                </div>
+            </div>
+            <div class="rounded-xl border p-5 border-gray-400 mb-4">
+                <div class="ml-5">
+                    <h3 class="text-2xl font-bold mb-3">How do you select an element from the DOM?</h3>
+                <p class="text-sm w-11/12">To select an element from the DOM, JavaScript provides several methods depending on the type of element you want to access. The document.getElementById("id") method selects a single element by its unique ID. If you want to select elements by class name, you can use document.getElementsByClassName("class"), which returns a collection of all matching elements. Similarly, document.getElementsByTagName("tag") retrieves all elements with a given tag name. For more flexible and CSS-style selection, document.querySelector("selector") selects the first element that matches a specified CSS selector, while document.querySelectorAll("selector") returns a NodeList of all matching elements. These methods allow developers to easily access and manipulate elements within a webpage.</p>
+                </div>
+            </div>
+            <div class="rounded-xl border p-5 border-gray-400 mb-4">
+                <div class="ml-5">
+                    <h3 class="text-2xl font-bold mb-3">What is event delegation in the context of the DOM, and why is it useful?</h3>
+                <p class="text-sm w-11/12">Event delegation is a technique in the DOM where a single event listener is added to a parent element to manage events for its child elements, rather than attaching individual listeners to each child. This works because events in the DOM bubble up from the target element to its ancestors, allowing the parent to "catch" events triggered by its descendants. Event delegation is useful because it improves performance by reducing the number of event listeners, simplifies code management—especially when dealing with dynamic content—and ensures that newly added child elements are automatically covered by the parent’s listener without needing additional setup.</p>
+                </div>
+            </div>
+            <div class="rounded-xl border p-5 border-gray-400 mb-4">
+                <div class="ml-5">
+                    <h3 class="text-2xl font-bold mb-3">How do you manipulate an element's attributes and styles using the DOM?</h3>
+                <p class="text-sm w-11/12">You can manipulate an element's attributes and styles using the DOM by accessing the element through a selector and then using JavaScript to modify its properties. To change or set an attribute, you can use methods like element.setAttribute("attribute", "value") or directly assign values using dot notation, such as element.id = "newId". To read an attribute, you can use element.getAttribute("attribute"). For styles, you can modify the style property of the element, for example, element.style.color = "red" or element.style.display = "none". These approaches allow developers to dynamically update how elements appear and behave on a webpage.</p>
+                </div>
+            </div>
+        </main>
+    <footer class="h-[146px] bg-[#F9F7F3] ">
+
+    </footer>
+</body>
+
+</html>
